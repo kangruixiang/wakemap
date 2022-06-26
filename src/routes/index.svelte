@@ -30,7 +30,7 @@
 		<div class="">
 			<img src={floors[floor]} alt="map" class="border-none" />
 		</div>
-		<div class="mt-4 flex items-center justify-center space-x-4">
+		<div class="mt-4 flex items-center justify-center space-x-32">
 			<Motion whileTap={{ scale: 0.99 }} let:motion>
 				<button use:motion class="btn" on:click={() => (floor = floor -= 1)}>Go Down</button>
 			</Motion>
