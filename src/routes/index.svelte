@@ -28,7 +28,7 @@
 >
 	<div class="md:px-8 flex flex-col">
 		<div class="">
-			<img src={floors[floor]} alt="map" class="border-none" />
+			<img src={floors[floor]} alt="map" class="border-none w-full" />
 		</div>
 		<div class="mt-4 flex items-center justify-center space-x-32">
 			<Motion whileTap={{ scale: 0.99 }} let:motion>
