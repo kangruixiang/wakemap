@@ -23,6 +23,9 @@
 <main class="px-4 py-4">
   <div class="">
     <img src={floors[floor]} alt="map" class="border-none w-full" />
+    <div class="text-zinc-400 text-sm text-right mt-1 mx-3">
+      Made by <a href="https://projects.krxiang.com">Kang Rui Xiang</a>.
+    </div>
   </div>
   <div class="mt-4 flex space-x-4 items-center justify-center">
     <button class="btn" on:click={() => (floor = floor -= 1)}>Go Down</button>
