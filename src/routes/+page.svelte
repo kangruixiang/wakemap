@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+  import Button from "$lib/components/Button.svelte";
   const floors = [
     "Floor SB.png",
     "Floor M.png",
@@ -15,9 +16,7 @@
     "Floor 10.png",
     "Floor 11.png",
   ];
-  let floor = 0;
-  $: floor > 13 ? (floor = 13) : (floor = floor);
-  $: floor < 0 ? (floor = 0) : (floor = floor);
+  let floor = $state(0);
 </script>
 
 <main class="px-4 py-4">
@@ -28,8 +27,12 @@
     </div>
   </div>
   <div class="mt-4 flex space-x-4 items-center justify-center">
-    <button class="btn" on:click={() => (floor = floor -= 1)}>Go Down</button>
+    <Button disabled={floor == 0} onclick={() => (floor = floor -= 1)}
+      >Go Down</Button
+    >
 
-    <button class="btn" on:click={() => (floor = floor += 1)}>Go Up</button>
+    <Button disabled={floor == 13} onclick={() => (floor = floor += 1)}
+      >Go Up</Button
+    >
   </div>
 </main>
