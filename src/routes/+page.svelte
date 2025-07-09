@@ -14,6 +14,7 @@
     Floor9,
     Floor10,
     Floor11,
+    Floor12,
     SB,
   } from "$lib/components/floor/index";
   import Item from "$lib/components/items/Item.svelte";
@@ -61,15 +62,6 @@
           shape: "circle",
         },
         {
-          name: "Au Bon Pain",
-          textX: 100,
-          textY: 680,
-          x: 1930,
-          y: 550,
-          color: rose,
-          shape: "square",
-        },
-        {
           name: "Cafeteria",
           textX: 100,
           textY: 730,
@@ -81,7 +73,7 @@
         {
           name: "Starbucks",
           textX: 100,
-          textY: 780,
+          textY: 680,
           x: 1313,
           y: 472,
           color: rose,
@@ -403,6 +395,21 @@
       hall: Floor11,
       locations: [],
     },
+    {
+      name: "12",
+      hall: Floor12,
+      locations: [
+        {
+          name: "Rooftop",
+          textX: 100,
+          textY: 580,
+          x: 1786,
+          y: 605,
+          color: rose,
+          shape: "circle",
+        },
+      ],
+    },
   ];
 </script>
 
@@ -427,12 +434,14 @@
       class="btn btn-soft w-full h-full md:order-2">Down</button
     >
     <button
-      disabled={floor === 13}
+      disabled={floor === 14}
       onclick={() => (floor += 1)}
       class="btn btn-soft w-full h-full">Up</button
     >
   </div>
-  <div class="text-zinc-400 text-sm text-right mt-1 mx-3 col-span-12">
-    Made by <a href="https://projects.krxiang.com">Kang Rui Xiang</a>.
+  <div class="text-zinc-400 text-sm text-right mt-8 md:mt-1 mx-3 col-span-12">
+    Made by <a href="https://projects.krxiang.com" class="link"
+      >Kang Rui Xiang</a
+    >.
   </div>
 </div>
