@@ -400,7 +400,7 @@
       hall: Floor12,
       locations: [
         {
-          name: "Rooftop",
+          name: "Rooftop Courtyard",
           textX: 100,
           textY: 580,
           x: 1786,
