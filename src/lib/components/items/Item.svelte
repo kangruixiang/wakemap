@@ -65,7 +65,7 @@
         />
       {:else if location.shape === "triangle"}
         <Triangle
-          x={location.textX - 14}
+          x={location.textX - 13}
           y={location.textY - 15}
           size={25}
           color={location.color}
@@ -73,7 +73,7 @@
         />
       {:else if location.shape === "pentagon"}
         <Pentagon
-          x={location.textX - 14}
+          x={location.textX - 13}
           y={location.textY - 15}
           size={25}
           color={location.color}

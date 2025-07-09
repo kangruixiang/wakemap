@@ -134,6 +134,16 @@
         title2="Floor 4"
         elevator={true}
       />
+    {:else if floor === "2"}
+      <Building
+        x={1482}
+        y={795}
+        width={320}
+        height={156}
+        title="Cancer Center"
+        title2="Floor 6"
+        elevator={true}
+      />
     {:else if floor === "4"}
       <Building
         x={1482}
