@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin 'daisyui';
+
+@layer base {
+  body {
+    @apply bg-base-300 min-h-screen;
+  }
+  img {
+    @apply rounded-md block mx-auto;
+  }
+  h1 {
+    @apply mb-4 text-xl font-bold uppercase;
+  }
+  h2 {
+    @apply mb-2 text-lg font-bold uppercase;
+  }
+  p {
+    @apply font-serif text-xl text-zinc-800;
+  }
+  ul,
+  ol {
+    @apply font-serif text-xl;
+  }
+}
