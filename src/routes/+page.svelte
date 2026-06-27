@@ -229,22 +229,12 @@
         {
           name: "MICU O",
           textX: 100,
-          textY: 730,
+          textY: 630,
           x: 1530,
           y: 820,
           color: "black",
           shape: "circle",
         },
-        {
-          name: "MICU A, B, C",
-          textX: 100,
-          textY: 630,
-          x: 1084,
-          y: 641,
-          color: "black",
-          shape: "square",
-        },
-
         {
           name: "Dialysis Center",
           textX: 100,
@@ -257,11 +247,20 @@
         {
           name: "Cath Lab",
           textX: 100,
-          textY: 780,
+          textY: 730,
           x: 1789,
           y: 612,
           color: "black",
           shape: "pentagon",
+        },
+        {
+          name: "CVICU",
+          textX: 100,
+          textY: 780,
+          x: 1747,
+          y: 432,
+          color: "black",
+          shape: "hexagon",
         },
       ],
     },
@@ -309,7 +308,7 @@
       hall: Floor7,
       locations: [
         {
-          name: "CVICU and CTICU",
+          name: "CTICU",
           textX: 100,
           textY: 580,
           x: 1036,

@@ -1,7 +1,7 @@
 <script>
-  import { ArdmoreToEle, Brenner, NewTower } from "$lib/components/hall/index";
+  import { ArdmoreToEle, Brenner, Freischlag  } from "$lib/components/hall/index";
 </script>
 
 <ArdmoreToEle />
 <Brenner />
-<NewTower />
+<Freischlag  />

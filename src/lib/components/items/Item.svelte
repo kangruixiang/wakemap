@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Apple, Pentagon, Triangle } from "@lucide/svelte";
+  import { Hexagon, Pentagon, Triangle } from "@lucide/svelte";
 
   type Props = {
     locations: {
@@ -9,7 +9,7 @@
       x: number;
       y: number;
       color: string;
-      shape: "square" | "circle" | "triangle" | "pentagon";
+      shape: "square" | "circle" | "triangle" | "pentagon" | "hexagon";
     }[];
   };
 
@@ -38,6 +38,14 @@
       />
     {:else if location.shape === "pentagon"}
       <Pentagon
+        x={location.x - 19}
+        y={location.y - 20}
+        size={25}
+        color={location.color}
+        fill={location.color}
+      />
+      {:else if location.shape === "hexagon"}
+      <Hexagon
         x={location.x - 19}
         y={location.y - 20}
         size={25}
@@ -73,6 +81,14 @@
         />
       {:else if location.shape === "pentagon"}
         <Pentagon
+          x={location.textX - 13}
+          y={location.textY - 15}
+          size={25}
+          color={location.color}
+          fill={location.color}
+        />
+        {:else if location.shape === "hexagon"}
+        <Hexagon
           x={location.textX - 13}
           y={location.textY - 15}
           size={25}

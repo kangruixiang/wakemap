@@ -98,9 +98,9 @@
     <Building
       x={1720}
       y={340}
-      width={180}
+      width={250}
       height={160}
-      title="New"
+      title="Freischlag"
       title2="Tower"
     />
 
@@ -176,8 +176,8 @@
   </svg>
 </div>
 
-<!-- {mouse.x}
-{mouse.y} -->
+{mouse.x}
+{mouse.y}
 
 <style>
   text {

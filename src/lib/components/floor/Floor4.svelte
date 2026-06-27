@@ -6,6 +6,7 @@
     ReynoldToNorth,
     Brenner,
     Cancer,
+    Freischlag 
   } from "$lib/components/hall/index";
 </script>
 
@@ -15,3 +16,4 @@
 <ArdmoreToEle />
 <Brenner />
 <Cancer />
+<Freischlag />
