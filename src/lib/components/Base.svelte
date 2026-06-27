@@ -176,8 +176,8 @@
   </svg>
 </div>
 
-{mouse.x}
-{mouse.y}
+<!-- {mouse.x}
+{mouse.y} -->
 
 <style>
   text {
